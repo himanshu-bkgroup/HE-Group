@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-he-primary: #006B35;
+  --color-he-primary-dark: #004D25;
+  --color-he-secondary: #008C45;
+  --color-he-orange: #FF7900;
+  --color-he-orange-dark: #E06700;
+  --color-he-orange-light: #FFF3E6;
+  --color-he-surface: #F8FAF9;
+  --color-he-card: #FFFFFF;
+  --color-he-dark: #0D1912;
+  --color-he-muted: #52665C;
+}
+
+:root {
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: light;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle corporate ambient background grid */
+.bg-corporate-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 107, 53, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 107, 53, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(0, 107, 53, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Luxury card glow */
+.card-glow-green {
+  box-shadow: 0 10px 30px -10px rgba(0, 107, 53, 0.12), 0 0 1px 1px rgba(0, 107, 53, 0.05);
+}
+
+.card-glow-orange {
+  box-shadow: 0 10px 30px -10px rgba(255, 121, 0, 0.15), 0 0 1px 1px rgba(255, 121, 0, 0.08);
+}
+
+/* Shimmer animation on CTA */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #008C4560;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006B35;
+}
+
